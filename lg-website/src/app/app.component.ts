@@ -8,7 +8,7 @@ import gsap from 'gsap';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,NavBarComponent,FloatingPicturesComponent,FooterComponent],
+  imports: [CommonModule, RouterOutlet,NavBarComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
