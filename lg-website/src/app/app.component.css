@@ -89,9 +89,13 @@
 .pfp {
     width:500px;
     height:300px;
-    float: center; /* Align to the left */
+    margin: auto;
     overflow:hidden;
-
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    align-self: center;
+    float: right;
 }
 
 
@@ -117,7 +121,7 @@
     position: absolute;
     top: calc(50% - 4px); /* Adjust to vertically center the line */
     left: -100%; /* Start from outside the section */
-    width: 100%; /* Extend the width for the full coverage */
+    width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
     background-color: #9acd32; /* Light green color */
     animation: snakeAnimation 10s linear infinite; /* Adjust animation duration */

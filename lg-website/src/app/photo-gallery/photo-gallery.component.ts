@@ -7,10 +7,5 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
   styleUrls: ['./photo-gallery.component.css']
 })
 export class PhotoGalleryComponent {
-  photos = [
-    { url: 'assets/DSCF0170.JPG'},
-    { url: 'assets/DSCF0170.JPG'},
-    // Add more photos here
-  ];
 
 }
