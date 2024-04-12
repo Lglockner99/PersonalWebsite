@@ -1,0 +1,38 @@
+/* photo-gallery.component.css */
+
+.photo {
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.2s;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative; /* Required for z-index */
+    z-index: 2; /* Ensure blocks appear above the snake line */
+    overflow:hidden;
+    animation: movePhotos 20s linear infinite; /* Adjust animation duration */
+}
+
+.photo:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+
+@keyframes movePhotos {
+    0% {
+        transform: translateX(0); /* Start at the original position */
+    }
+    100% {
+        transform: translateX(calc(100vw + 50%)); /* Move the blocks off-screen to the right */
+    }
+}
+
+.photo-container {
+    display: flex;
+    overflow: hidden; /* Hide the blocks that move off-screen */
+}
+
