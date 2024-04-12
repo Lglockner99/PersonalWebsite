@@ -1,5 +1,14 @@
 /* photo-gallery.component.css */
-
+.heading {
+    font-size: 4rem; /* Increased font size */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    text-align: center;
+    font-weight: bold;
+}
+.h2{
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+}
 .photo {
     display: inline-block;
     vertical-align: top;
@@ -13,27 +22,24 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     position: relative; /* Required for z-index */
     overflow:hidden;
-    
-    /*animation: movePhotos 10s linear infinite; /* Adjust animation duration */
-}
-
-.photo:hover {
-    transform: scale(1.5); /* Slight scaling on hover */
-    z-index: 5;
+    overflow-x: hidden;
+    display:inline-flex;
+   /* animation: movePhotos 10s linear infinite; /* Adjust animation duration */
 }
 
 
 @keyframes movePhotos {
     0% {
-        transform: translateX(0); /* Start at the original position */
+        transform: translateX(-100%); /* Start at the original position */
     }
     100% {
-        transform: translateX(calc(100vw + 50%)); /* Move the blocks off-screen to the right */
+        transform: translateX(100%); /* Move the blocks off-screen to the right */
     }
 }
 
 .photo-container {
-    margin: auto;
  /* Hide the blocks that move off-screen */
+    display:inline-flex;
+    margin:auto;
 }
 

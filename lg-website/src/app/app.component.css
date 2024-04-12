@@ -53,7 +53,7 @@
 
 /* Home Section */
 .home {
-    height: 100vh;
+    height: 80vh;
     font-size: 4rem; /* Increased font size */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
@@ -68,8 +68,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 70vh;
     background-image: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcc94, #fff9cc);
     z-index: -1; /* Behind other content */
     animation: backgroundAnimation 10s ease infinite; /* Adjust animation duration */
@@ -87,14 +87,13 @@
 
 /* pfp */
 .pfp {
-    width:500px;
+    width:300px;
     height:300px;
     margin: auto;
     overflow:hidden;
     border: 1px solid #dcdcdc;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    align-self: center;
     float: right;
 }
 
