@@ -5,7 +5,14 @@
     margin: 0;
     overflow: hidden;
 }
-
+.readMe{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-size:12pt;
+    width:20%;
+    color: black;
+    float: right;
+    font-style: italic;
+}
 /* Header Text */
 .expHeader {
     font-size: 2.5rem; /* Adjusted font size */
@@ -38,7 +45,7 @@
 }
 
 .block:hover {
-    transform: scale(1.05); /* Slight scaling on hover */
+    transform: scale(1.25); /* Slight scaling on hover */
 }
 
 /* Text inside Blocks */
@@ -53,7 +60,7 @@
 
 /* Home Section */
 .home {
-    height: 80vh;
+    height: 100vh;
     font-size: 4rem; /* Increased font size */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
@@ -73,6 +80,7 @@
     background-image: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcc94, #fff9cc);
     z-index: -1; /* Behind other content */
     animation: backgroundAnimation 10s ease infinite; /* Adjust animation duration */
+    
     overflow:hidden;
 }
 
@@ -89,12 +97,12 @@
 .pfp {
     width:300px;
     height:300px;
-    margin: auto;
     overflow:hidden;
     border: 1px solid #dcdcdc;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    float: right;
+    float:right;
+    margin:10px;
 }
 
 
@@ -157,7 +165,7 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: black; /* Black color */
+    background-color: rgba(230, 114, 37, 0.822); /*for cursor follower*/
     opacity: 0.5; /* Adjusted opacity */
     z-index: 10000;
     pointer-events: none;
@@ -173,6 +181,7 @@
     text-align: center; /* Center-align the text */
     overflow: hidden;
     padding-top: 10px;
+    padding-bottom:5%;
 }
 
 /* Contact Section */
@@ -234,4 +243,94 @@
   .social-link {
     animation: floatAnimation 3s ease infinite;
   }
+
+/*Block2 for poster*/
+
+.photo{
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.2s;
+    border-radius: 15px;
+    max-height:100%;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-block {
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.2s;
+    width: 350px;
+    height: 540px;
+    border-radius: 15px;
+    margin: 50px;
+
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative; /* Required for z-index */
+    z-index: 2; /* Ensure blocks appear above the snake line */
+    overflow:hidden;
+}
+
+.project-block:hover {
+    transform: scale(1.25); /* Slight scaling on hover */
+
+}
+
+.Projects {
+    background-color: #ffffff; /* White background color */
+    height: 100vh;
+    font-size: 4rem; /* Increased font size */
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-weight: bold; /* Added font weight */
+    color: #000000; /* Black text color */
+    position: relative; /* Required for absolute positioning of the snake */
+    overflow: hidden; /* Hide overflow for the snake animation */
+    z-index: 0;
+}
+
+.Projects::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 4px); /* Adjust to vertically center the line */
+    left: -100%; /* Start from outside the section */
+    width: 200%; /* Extend the width for the full coverage */
+    height: 12px; /* Set the height of the snake */
+    background-color: rgb(24, 24, 194); /* Light green color */
+    animation: reverseSnakeAnimation 10s linear infinite; /* Adjust animation duration */
+    z-index: 1; /* Ensure snake line appears below the blocks */
+}
+
+@keyframes reverseSnakeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.link{
+    text-align: center;
+    margin: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    color: blue; /* Black text color */
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0) translateY(50px);
+    }
+    50% {
+        transform: translateX(100%) translateY(-50px);
+    }
+    100% {
+        transform: translateX(200%) translateY(50px);
+    }
+}
 

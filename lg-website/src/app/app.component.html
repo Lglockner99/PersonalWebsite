@@ -9,7 +9,17 @@
             I am always looking for new opportunities to enhance my skillset and experiment with new tech.
             During my free time I enjoy photography, jiu jitsu, and exploring the natural world.
         </p>
+        <div stlye="display: flex; align-items: center; margin-top:10%; /* Vertically center items */">
             <img class="pfp" src="assets/me.jpg" alt="Liam Glockner">
+            <p class="readMe"> "I started this website as a place to learn and grow my skills in front end development. 
+                The idea of using this site to be creative and having it become a long term project to iterate and improve for years to come is a big motivator for me. 
+                My only hope from this project is that you enjoy learning a bit more about me and my background and to inspire others to create their own websites."
+                <br><br>All the Best,<br><br>
+                Liam Glockner
+            </p>
+           
+        </div>
+        
     </div>
     <div id="aboutme" class ="Journey">
         <h3>Experience</h3>
@@ -89,12 +99,52 @@
             </div>
         </div>
     </div>
-    <div id="projects" class ="section">
+    <div id="projects" class ="Projects">
         <h3>Projects</h3>
-        <p> </p>
+        <div class="container">
+            <div class="block">
+                <p class="expHeader">B.R.U.C.E</p>
+                <ul style="font-size: 12px; text-align: left;">
+                    <li style="padding-bottom: 5px;">
+                        Autonomous air ventilation exploration robot capable of sensing various real time diagnostic
+                        information to help serve technicians.  
+                    </li>
+                    <li style="padding-bottom: 5px;">
+                        A* algorithm traversal with Arduino/Raspberry Pi microcontrollers and Custom PCB.
+                        Programmed in Micro Python and C++.
+                    </li>
+                    <li style="padding-bottom: 5px;">
+                        Outcome: Received first place among 30 other design projects for ECE department.
+                    </li>
+                    <a class="link" href="http://sdp.ecs.umass.edu/sdp23/team02/#cruise">More Info</a>
+                </ul>
+                <img style=" max-height:255px; max-width:100%;"src="assets/Bruce.png">
+            </div>
+            <div class="project-block"> 
+                <img class="photo" src="assets/LaserComm.png">
+            </div>
+            <div class="block">
+                <p class="expHeader">Garden Warden</p>
+                <ul style="font-size: 12px; text-align: left;">
+                    <li style="padding-bottom: 5px;">
+                        Created for my outdoor Garden plot with Python and Arduino to check moisture level of plants based on soil
+                        capacitance and send alerts when in need of watering. 
+                        cerated using arduino and custom PCB.
+                    </li>
+                    <li style="padding-bottom: 5px;">
+                        Outcome: Utilized BLE and Duty cycling techniques to reduce power
+                        consumption as well as keep my vegetables happy even when I forget about them.
+                    </li>
+                    <li style="padding-bottom: 5px;">
+                        Plan to integrate automated watering system and allow for user inputs to cater to varying plant types and watering constraints. 
+                    </li>
+                </ul>
+                <img style="max-height:240px; max-width:100%;" src="assets/HappyPlant.webp">
+            </div>
+        </div>
     </div>
     
-<app-photo-gallery></app-photo-gallery>
+<app-photo-gallery id="photography"></app-photo-gallery>
 
     <div id="contact" class ="contactSection">
         <section class="contact">

@@ -1,14 +1,21 @@
-/* photo-gallery.component.css */
+/* Heading */
 .heading {
-    font-size: 4rem; /* Increased font size */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-size: 4rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     font-weight: bold;
+    margin:10px;
 }
-.h2{
+
+/* Subheading */
+.h2 {
+    padding:0;
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
 }
+
+/* Individual Photo */
 .photo {
     display: inline-block;
     vertical-align: top;
@@ -20,26 +27,32 @@
     border: 1px solid #dcdcdc;
     background-color: #ffffff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    position: relative; /* Required for z-index */
-    overflow:hidden;
-    overflow-x: hidden;
-    display:inline-flex;
-   /* animation: movePhotos 10s linear infinite; /* Adjust animation duration */
+    position: relative;
+    overflow: hidden;
+   /* animation: movePhotos 35s linear infinite; */
 }
 
-
+/* Keyframes for Moving Photos */
 @keyframes movePhotos {
     0% {
-        transform: translateX(-100%); /* Start at the original position */
+        transform: translateX(-500%); /* Start at the original position */
     }
     100% {
-        transform: translateX(100%); /* Move the blocks off-screen to the right */
+        transform: translateX(100vw); /* Move off-screen to the right */
     }
 }
 
+/* Photo Container */
 .photo-container {
- /* Hide the blocks that move off-screen */
-    display:inline-flex;
-    margin:auto;
+    display: flex;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    justify-content: center; /* Center-align photos */
+    margin: auto; /* Center the container */
 }
 
+.photo:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    z-index: 10;
+    border-radius: 15px;
+    border: 1px solid #dcdcdc;
+}
