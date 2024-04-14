@@ -1,11 +1,16 @@
 nav {
     background-color: white;
     overflow: hidden;
-    font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family:"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     font-weight: bold;
-    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0px;
     width: 100vw;
+    position:fixed;
+    z-index: 999;
+    top:0;
+    left:0;
   }
 
   nav a {
@@ -31,7 +36,7 @@ nav {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     border-radius: 5px;
   }
 

@@ -1,17 +1,18 @@
 /* Heading */
 .heading {
     font-size: 4rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */;
     text-align: center;
     font-weight: bold;
     margin:10px;
+    padding-top:60px;
 }
 
 /* Subheading */
 .h2 {
     padding:0;
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */;
     font-style: italic;
 }
 

@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 .readMe{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-size:12pt;
     width:20%;
     color: black;
@@ -16,15 +16,30 @@
 /* Header Text */
 .expHeader {
     font-size: 2.5rem; /* Adjusted font size */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
+    text-align: left;
+    margin:0;
+    width:50%;
+    display:flex;
+    align-items: center;
+}
+
+.projectHeader {
+    font-size: 2.0rem; /* Adjusted font size */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-weight: bold; /* Added font weight */
+    text-align: Center;
+    margin:0;
 }
 
 /* Experience Text */
 .experiences {
-    font-size: 1.5rem; /* Adjusted font size */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-size: 1.0rem; /* Adjusted font size */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     overflow:hidden;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .block {
@@ -62,11 +77,12 @@
 .home {
     height: 100vh;
     font-size: 4rem; /* Increased font size */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
     color: black; /* White text color */
     position: relative; /* Required for absolute positioning of elements */
     overflow: hidden; /* Hide overflow for the background animation */
+    padding-top:30px
 }
 
 /* Background Animation */
@@ -80,7 +96,6 @@
     background-image: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcc94, #fff9cc);
     z-index: -1; /* Behind other content */
     animation: backgroundAnimation 10s ease infinite; /* Adjust animation duration */
-    
     overflow:hidden;
 }
 
@@ -105,20 +120,28 @@
     margin:10px;
 }
 
-
+.logo {
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin:auto
+}
 
 
 /* Journey Section */
 .Journey {
     background-color: #ffffff; /* White background color */
-    height: 100vh;
+    height: 225vh;
     font-size: 4rem; /* Increased font size */
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
     color: #000000; /* Black text color */
     position: relative; /* Required for absolute positioning of the snake */
-    overflow: hidden; /* Hide overflow for the snake animation */
+    overflow: hidden;/* Hide overflow for the snake animation */
     z-index: 0;
 }
 
@@ -126,13 +149,14 @@
 .Journey::before {
     content: '';
     position: absolute;
-    top: calc(50% - 4px); /* Adjust to vertically center the line */
+    top: calc(9% - 4px); /* Adjust to vertically center the line */
     left: -100%; /* Start from outside the section */
     width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
     background-color: #9acd32; /* Light green color */
-    animation: snakeAnimation 10s linear infinite; /* Adjust animation duration */
+    animation: snakeAnimation 8s linear infinite; /* Adjust animation duration */
     z-index: 1; /* Ensure snake line appears below the blocks */
+    
 }
 
 @keyframes snakeAnimation {
@@ -151,7 +175,7 @@
     height: 100vh;
     font-size: 4rem; /* Increased font size */
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
     color: #000000; /* Black text color */
     overflow: hidden;
@@ -174,7 +198,7 @@
 /* Intro */
 .intro {
     color: #000000; /* Black text color */
-    font-family: "Arial", sans-serif; /* Changed font family */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Changed font family */
     font-size: 1.2rem; /* Increased font size */
     width: 60%; /* Made it wider across the page */
     margin: auto; /* Center the element */
@@ -192,7 +216,7 @@
     height: 20vh;
     font-size: 4rem; /* Increased font size */
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
     color: #000000; /* Black text color */
     overflow: hidden;
@@ -286,7 +310,7 @@
     height: 100vh;
     font-size: 4rem; /* Increased font size */
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
     color: #000000; /* Black text color */
     position: relative; /* Required for absolute positioning of the snake */
@@ -297,13 +321,13 @@
 .Projects::before {
     content: '';
     position: absolute;
-    top: calc(50% - 4px); /* Adjust to vertically center the line */
+    top: calc(20% - 4px); /* Adjust to vertically center the line */
     left: -100%; /* Start from outside the section */
     width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
     background-color: rgb(24, 24, 194); /* Light green color */
-    animation: reverseSnakeAnimation 10s linear infinite; /* Adjust animation duration */
-    z-index: 1; /* Ensure snake line appears below the blocks */
+    animation: reverseSnakeAnimation 8s linear infinite; /* Adjust animation duration */
+    z-index: 0; /* Ensure snake line appears below the blocks */
 }
 
 @keyframes reverseSnakeAnimation {
@@ -318,7 +342,7 @@
 .link{
     text-align: center;
     margin: auto;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     color: blue; /* Black text color */
 }
 
@@ -334,3 +358,7 @@
     }
 }
 
+.xpBlock{
+text-align: center;
+padding-bottom: 50px;
+}
