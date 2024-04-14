@@ -10,8 +10,26 @@
     font-size:12pt;
     width:20%;
     color: black;
-    float: right;
+    display: flex;
     font-style: italic;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    text-align: center; /* Center the text content */
+}
+
+.pfp {
+    margin-right: 20px; /* Adjust the spacing between the image and text */
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 /* Header Text */
 .expHeader {
@@ -110,14 +128,7 @@
 
 /* pfp */
 .pfp {
-    width:300px;
-    height:300px;
-    overflow:hidden;
-    border: 1px solid #dcdcdc;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    float:right;
-    margin:10px;
+    
 }
 
 .logo {
@@ -134,7 +145,7 @@
 /* Journey Section */
 .Journey {
     background-color: #ffffff; /* White background color */
-    height: 225vh;
+    height: 250vh;
     font-size: 4rem; /* Increased font size */
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
@@ -149,7 +160,7 @@
 .Journey::before {
     content: '';
     position: absolute;
-    top: calc(9% - 4px); /* Adjust to vertically center the line */
+    top: calc(8% - 4px); /* Adjust to vertically center the line */
     left: -100%; /* Start from outside the section */
     width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
@@ -361,4 +372,5 @@
 .xpBlock{
 text-align: center;
 padding-bottom: 50px;
+margin-left:33%;
 }

@@ -1,6 +1,6 @@
 .footer{
     background-color: white;
-    font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family:"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Similar to Apple's font */
     padding:0px;
     overflow: hidden;
     
