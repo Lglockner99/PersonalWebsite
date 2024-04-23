@@ -21,8 +21,8 @@
     display: inline-block;
     vertical-align: top;
     transition: transform 0.2s;
-    width: 500px;
-    height: 300px;
+    max-width: 100%; /* Ensure the image scales to fit the container */
+    height: auto; /* Allow the image to scale proportionally */
     border-radius: 15px;
     margin: 20px;
     border: 1px solid #dcdcdc;
@@ -30,18 +30,10 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-   /* animation: movePhotos 35s linear infinite; */
+    image-rendering: optimizeQuality; /* Keep images crisp */
+    /* animation: movePhotos 35s linear infinite; */
 }
 
-/* Keyframes for Moving Photos */
-@keyframes movePhotos {
-    0% {
-        transform: translateX(-500%); /* Start at the original position */
-    }
-    100% {
-        transform: translateX(100vw); /* Move off-screen to the right */
-    }
-}
 
 /* Photo Container */
 .photo-container {

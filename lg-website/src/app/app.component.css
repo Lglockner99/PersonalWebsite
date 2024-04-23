@@ -93,7 +93,8 @@
 
 /* Home Section */
 .home {
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 250px;
     font-size: 4rem; /* Increased font size */
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
@@ -141,7 +142,7 @@
 /* Journey Section */
 .Journey {
     background-color: #ffffff; /* White background color */
-    height: 250vh;
+    height: fit-content;
     font-size: 4rem; /* Increased font size */
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
@@ -156,7 +157,7 @@
 .Journey::before {
     content: '';
     position: absolute;
-    top: calc(8% - 4px); /* Adjust to vertically center the line */
+    top: auto; /* Adjust to vertically center the line */
     left: -100%; /* Start from outside the section */
     width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
@@ -220,7 +221,7 @@
     text-align: center;
   }
 .contactSection {
-    height: 20vh;
+    height: fit-content;
     font-size: 4rem; /* Increased font size */
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
@@ -314,7 +315,7 @@
 
 .Projects {
     background-color: #ffffff; /* White background color */
-    height: 100vh;
+    height: fit-content;
     font-size: 4rem; /* Increased font size */
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
@@ -328,7 +329,7 @@
 .Projects::before {
     content: '';
     position: absolute;
-    top: calc(20% - 4px); /* Adjust to vertically center the line */
+    top:auto;/* Adjust to vertically center the line */
     left: -100%; /* Start from outside the section */
     width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
