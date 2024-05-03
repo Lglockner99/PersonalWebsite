@@ -1,10 +1,10 @@
-nav {
+.navbar {
     background-color: white;
     overflow: hidden;
     font-family:"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     font-weight: bold;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom:10px;
     margin: 0px;
     width: 100vw;
     position:fixed;
@@ -13,7 +13,7 @@ nav {
     left:0;
   }
 
-  nav a {
+  .navbar a {
     float: left;
     display: block;
     color: black;
@@ -24,12 +24,12 @@ nav {
     border-radius: 5px;
   }
 
-  nav a:hover {
+  .navbar a:hover {
     background-color: lightgray;
     border-radius: 5px;
   }
 
-  button {
+  .button {
     color: black;
     padding: 10px 15px;
     border: none;
@@ -40,11 +40,6 @@ nav {
     border-radius: 5px;
   }
 
-  button:hover {
-    background-color: lightgreen;
-    
-
-  }
 
   @media screen and (max-width: 600px) {
     nav a, .search-container {

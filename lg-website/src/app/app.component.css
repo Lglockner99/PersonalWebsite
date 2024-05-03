@@ -34,14 +34,15 @@
 /* Header Text */
 .expHeader {
     font-size: 2.5rem; /* Adjusted font size */
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
     text-align: left;
     margin:0;
-    width:50%;
+    min-width: 20%;
     display:flex;
     align-items: center;
 }
+
 
 .projectHeader {
     font-size: 2.0rem; /* Adjusted font size */
@@ -58,6 +59,8 @@
     overflow:hidden;
     text-align: left;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .block {
@@ -94,6 +97,7 @@
 /* Home Section */
 .home {
     height: fit-content;
+    padding-top: 175px;
     padding-bottom: 250px;
     font-size: 4rem; /* Increased font size */
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
@@ -101,7 +105,6 @@
     color: black; /* White text color */
     position: relative; /* Required for absolute positioning of elements */
     overflow: hidden; /* Hide overflow for the background animation */
-    padding-top:30px
 }
 
 /* Background Animation */
@@ -112,7 +115,7 @@
     left: 0;
     width: 70vw;
     height: 70vh;
-    background-image: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcc94, #fff9cc);
+    background-image: linear-gradient(45deg, #a6ff84, #84ffad, #84ffe7, #84daff);
     z-index: -1; /* Behind other content */
     animation: backgroundAnimation 10s ease infinite; /* Adjust animation duration */
     overflow:hidden;
@@ -129,13 +132,13 @@
 
 
 .logo {
-    width:100px;
+    min-width:100px;
     height:100px;
     overflow:hidden;
     border: 1px solid #dcdcdc;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    margin:auto
+    margin-right:30px;
 }
 
 
@@ -161,7 +164,8 @@
     left: -100%; /* Start from outside the section */
     width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
-    background-color: #9acd32; /* Light green color */
+   
+    background-image: linear-gradient(45deg, #a6ff84, #84ffad, #84ffe7, #84daff);
     animation: snakeAnimation 8s linear infinite; /* Adjust animation duration */
     z-index: 1; /* Ensure snake line appears below the blocks */
     
@@ -193,7 +197,7 @@
 .cursor-follower {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -333,7 +337,9 @@
     left: -100%; /* Start from outside the section */
     width: 200%; /* Extend the width for the full coverage */
     height: 12px; /* Set the height of the snake */
-    background-color: rgb(24, 24, 194); /* Light green color */
+
+    background-image: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcc94, #fff9cc);
+     /* Light green color */
     animation: reverseSnakeAnimation 8s linear infinite; /* Adjust animation duration */
     z-index: 0; /* Ensure snake line appears below the blocks */
 }

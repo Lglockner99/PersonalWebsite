@@ -1,9 +1,16 @@
-<nav>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#aboutme">Experiences</a>
-    <a href="#projects">Projects</a>
-    <a href="#photography">Photography</a>
-    <a href="#contact">Links/Contact</a>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<nav class="navbar">
+  <div class="navbar-toggle" (click)="toggleNavbar()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
   </div>
-  </nav>
+  <div class="navbar-menu" [class.active]="isNavbarOpen">
+      <a href="#home">Home</a>
+      <a href="#aboutme">Experiences</a>
+      <a href="#projects">Projects</a>
+      <a href="#photography">Photography</a>
+      <a href="#contact">Links/Contact</a>
+  </div>
+</nav>

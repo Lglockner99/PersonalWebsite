@@ -5,6 +5,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import gsap from 'gsap';
 import { PhotoGalleryModule } from './photo-gallery/photo-gallery.module';
+
 @Component({
   selector: 'app-root',
   standalone: true,
