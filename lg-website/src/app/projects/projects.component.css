@@ -65,7 +65,7 @@
 
 .Projects {
     background-color: #ffffff; /* White background color */
-    height: fit-content;
+    height: 100vh;
     font-size: 4rem; /* Increased font size */
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
@@ -75,19 +75,6 @@
     overflow: hidden; /* Hide overflow for the snake animation */
     z-index: 0;
 }
-
-.Projects::before {
-    content: '';
-    position: absolute;
-    top:auto;/* Adjust to vertically center the line */
-    left: -100%; /* Start from outside the section */
-    width: 200%; /* Extend the width for the full coverage */
-    height: 12px; /* Set the height of the snake */
-    background-color: rgb(24, 24, 194); /* Light green color */
-    animation: reverseSnakeAnimation 8s linear infinite; /* Adjust animation duration */
-    z-index: 0; /* Ensure snake line appears below the blocks */
-}
-
 
 .link{
     text-align: center;
