@@ -1,3 +1,8 @@
+
+.photo-section{
+background-color: #d3d9d4;
+}
+
 /* Heading */
 .heading {
     font-size: 4rem;
@@ -6,6 +11,7 @@
     font-weight: bold;
     margin:10px;
     padding-top:60px;
+    color:black
 }
 
 /* Subheading */
@@ -14,6 +20,7 @@
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */;
     font-style: italic;
+    color: black;
 }
 
 /* Individual Photo */
@@ -50,3 +57,57 @@
     border: 1px solid #dcdcdc;
 }
 
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 3.5rem; /* Slightly decrease font size for medium screens */
+    }
+
+    .photo {
+        margin: 15px; /* Adjust margin for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 3rem; /* Further decrease font size for smaller screens */
+    }
+
+    .photo-container {
+        flex-wrap: wrap; /* Allow photos to wrap */
+        justify-content: center; /* Center the wrapped photos */
+    }
+
+    .photo {
+        margin: 10px; /* Adjust margin for smaller screens */
+        width: calc(50% - 20px); /* Two photos per row with spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.5rem; /* Decrease font size for smaller screens */
+    }
+
+    .photo {
+        width: calc(100% - 20px); /* Full width with margin */
+        margin: 10px auto; /* Center photos */
+    }
+}
+
+@media (max-width: 576px) {
+
+    .photo {
+        width: 100%; /* Ensure photos take full width */
+        margin: 5px auto; /* Adjust margin for very small screens */
+    }
+
+    .heading {
+        text-align: center;
+        padding-top:30%;
+        font-size: 3.3rem;
+        max-width:  100vw;
+        overflow: hidden;
+        padding-bottom: 0.5;
+    }
+}

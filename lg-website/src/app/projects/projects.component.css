@@ -64,7 +64,7 @@
 }
 
 .Projects {
-    background-color: #ffffff; /* White background color */
+    background-color: #f7f9fb; /* White background color */
     height: 100vh;
     font-size: 4rem; /* Increased font size */
     text-align: center;
@@ -95,6 +95,8 @@
     position: relative;
     overflow: hidden;
 }
+
+
 
 
 /* Media Queries for Mobile Responsiveness */
@@ -133,6 +135,8 @@
         height: auto; /* Adjust height automatically */
         margin: 15px auto; /* Center and reduce margin */
     }
+
+    
 }
 
 @media (max-width: 576px) {
@@ -142,5 +146,15 @@
 
     .block, .project-block {
         padding: 10px; /* Adjust padding for very small screens */
+    }
+
+    .heading {
+        text-align: center;
+        padding: 0;
+        margin-top:30%;
+        font-size: 3.3rem;
+        max-width:  100vw;
+        overflow: hidden;
+        padding-bottom: 0.5;
     }
 }
