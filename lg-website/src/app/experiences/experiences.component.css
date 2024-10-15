@@ -7,13 +7,13 @@
 
     /* Journey Section */
 .Journey {
-    background-color: #ffffff; /* White background color */
+    background-color: black; /* White background color */
     height: fit-content;
     font-size: 4rem; /* Increased font size */
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
     font-weight: bold; /* Added font weight */
-    color: #000000; /* Black text color */
+    color: white; /* Black text color */
     position: relative; /* Required for absolute positioning of the snake */
     overflow: hidden;/* Hide overflow for the snake animation */
     z-index: 0;
