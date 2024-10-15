@@ -59,6 +59,13 @@
     .readMe {
         width: 100%; /* Full width on smaller screens */
     }
+    .heading {
+        text-align: center;
+        padding-top: 10%;
+        margin: 0;
+        font-size:3rem;
+        overflow: hidden;
+    }
 }
 
 
@@ -107,3 +114,73 @@
   .social-link {
     animation: floatAnimation 3s ease infinite;
   }
+
+
+  /* Media Queries for Mobile Responsiveness */
+@media (max-width: 1200px) {
+    .contactSection {
+        font-size: 3rem; /* Decrease font size for medium screens */
+    }
+
+    .contact h2 {
+        font-size: 2rem; /* Decrease header size for medium screens */
+    }
+
+    .social-link {
+        padding: 8px 16px; /* Adjust padding for social links */
+        font-size: 1rem; /* Adjust font size for social links */
+    }
+}
+
+@media (max-width: 992px) {
+    .contactSection {
+        font-size: 2.5rem; /* Further decrease font size for smaller screens */
+    }
+
+    .contact h2 {
+        font-size: 1.5rem; /* Further decrease header size */
+    }
+
+    .social-link {
+        margin: 0 5px; /* Reduce margin between social links */
+        padding: 6px 12px; /* Further adjust padding */
+        font-size: 0.9rem; /* Further decrease font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+        font-size: 2rem; /* Further decrease font size for mobile */
+    }
+
+    .contact h2 {
+        font-size: 2rem; /* Further decrease header size for mobile */
+    }
+
+    .social-links {
+        flex-direction: row; /* Stack social links vertically */
+        align-items: center; /* Center social links */
+    }
+
+    .social-link {
+        margin: 5px 5px; /* Adjust margin for vertical stacking */
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 0.8rem; /* Further decrease font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .contactSection {
+        font-size: 1.5rem; /* Final adjustment for very small screens */
+    }
+
+    .contact h2 {
+        font-size: 2rem; /* Final header size adjustment */
+    }
+
+    .social-link {
+        margin: 0 5px; /* Reduce margin between social links */
+        padding: 6px 16px; /* Adjust padding for very small screens */
+        font-size: 0.75rem; /* Further decrease font size */
+    }
+}

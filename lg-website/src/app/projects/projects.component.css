@@ -95,3 +95,52 @@
     position: relative;
     overflow: hidden;
 }
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 1200px) {
+    .projectHeader {
+        font-size: 1.8rem; /* Decrease header font size for medium screens */
+    }
+
+    .block, .project-block {
+        width: 280px; /* Decrease width for medium screens */
+        height: 450px; /* Adjust height for medium screens */
+        margin: 30px; /* Adjust margin for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .projectHeader {
+        font-size: 1.6rem; /* Further decrease header font size for smaller screens */
+    }
+
+    .block, .project-block {
+        width: 90%; /* Set width to 90% for smaller screens */
+        height: auto; /* Let height adjust based on content */
+        margin: 20px auto; /* Center block and reduce margin */
+        display: block; /* Stack blocks vertically */
+    }
+}
+
+@media (max-width: 768px) {
+    .projectHeader {
+        font-size: 1.4rem; /* Final adjustment for very small screens */
+    }
+
+    .block, .project-block {
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Adjust height automatically */
+        margin: 15px auto; /* Center and reduce margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .projectHeader {
+        font-size: 1.2rem; /* Further adjust header font size */
+    }
+
+    .block, .project-block {
+        padding: 10px; /* Adjust padding for very small screens */
+    }
+}
