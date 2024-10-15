@@ -1,0 +1,46 @@
+.contact {
+    text-align: center;
+  }
+.contactSection {
+    height: fit-content;
+    font-size: 4rem; /* Increased font size */
+    text-align: center;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-weight: bold; /* Added font weight */
+    color: #000000; /* Black text color */
+    overflow: hidden;
+    z-index: 1;
+}
+  .contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    z-index: 1;
+  }
+  
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .social-link {
+    animation: floatAnimation 3s ease infinite;
+  }
