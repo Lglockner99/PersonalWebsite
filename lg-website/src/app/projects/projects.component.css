@@ -1,3 +1,5 @@
+
+
 .projectHeader {
     font-size: 2.0rem; /* Adjusted font size */
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
@@ -99,62 +101,26 @@
 
 
 
-/* Media Queries for Mobile Responsiveness */
+/* Media Queries for Medium Screens (max-width: 1200px) */
 @media (max-width: 1200px) {
-    .projectHeader {
-        font-size: 1.8rem; /* Decrease header font size for medium screens */
+    .block, .project-block {
+        width: 200px;
+        height: 300px;
+        margin: 30px;
     }
 
-    .block, .project-block {
-        width: 280px; /* Decrease width for medium screens */
-        height: 450px; /* Adjust height for medium screens */
-        margin: 30px; /* Adjust margin for medium screens */
+    .photo, .block img {
+        width: 100%; /* Ensure images scale with block width */
+        height: auto; /* Maintain aspect ratio */
     }
+    .containter {
+    flex-direction: column;
+    }
+
+    .Projects {
+        height:fit-content
+    }
+
 }
 
-@media (max-width: 992px) {
-    .projectHeader {
-        font-size: 1.6rem; /* Further decrease header font size for smaller screens */
-    }
 
-    .block, .project-block {
-        width: 90%; /* Set width to 90% for smaller screens */
-        height: auto; /* Let height adjust based on content */
-        margin: 20px auto; /* Center block and reduce margin */
-        display: block; /* Stack blocks vertically */
-    }
-}
-
-@media (max-width: 768px) {
-    .projectHeader {
-        font-size: 1.4rem; /* Final adjustment for very small screens */
-    }
-
-    .block, .project-block {
-        width: 100%; /* Full width for mobile */
-        height: auto; /* Adjust height automatically */
-        margin: 15px auto; /* Center and reduce margin */
-    }
-
-    
-}
-
-@media (max-width: 576px) {
-    .projectHeader {
-        font-size: 1.2rem; /* Further adjust header font size */
-    }
-
-    .block, .project-block {
-        padding: 10px; /* Adjust padding for very small screens */
-    }
-
-    .heading {
-        text-align: center;
-        padding: 0;
-        margin-top:30%;
-        font-size: 3.3rem;
-        max-width:  100vw;
-        overflow: hidden;
-        padding-bottom: 0.5;
-    }
-}
