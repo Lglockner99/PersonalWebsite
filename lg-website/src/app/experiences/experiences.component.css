@@ -1,0 +1,100 @@
+.xpBlock{
+    text-align: center;
+    padding-bottom: 50px;
+    margin-left:33%;
+    }
+
+
+    /* Journey Section */
+.Journey {
+    background-color: black; /* White background color */
+    height: fit-content;
+    font-size: 4rem; /* Increased font size */
+    text-align: center;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-weight: bold; /* Added font weight */
+    color: #f7f9fb; /* Black text color */
+    position: relative; /* Required for absolute positioning of the snake */
+    overflow: hidden;/* Hide overflow for the snake animation */
+    z-index: 0;
+}
+
+/* Header Text */
+.expHeader {
+    font-size: 2.5rem; /* Adjusted font size */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-weight: bold; /* Added font weight */
+    text-align: left;
+    margin:0;
+    min-width: 20%;
+    display:flex;
+    align-items: center;
+}
+
+/* Experience Text */
+.experiences {
+    font-size: 1.0rem; /* Adjusted font size */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    overflow:hidden;
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    min-width:100px;
+    height:100px;
+    overflow:hidden;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-right:30px;
+}
+
+.description{
+    font-size: 14px; 
+    text-align: left; 
+    width: 50%;
+}
+
+.heading {
+    text-align: center;
+    padding: 0;
+    margin-top:100px;
+    overflow: hidden;
+}
+
+
+/* Media Query for iPhone Screens and Smaller Devices */
+@media (max-width: 768px) {
+    .xpBlock {
+        margin-left: 0; /* Remove left margin to take full width */
+        padding: 0 10px; /* Add padding to prevent text from touching the edges */
+    }
+
+    .description {
+        width: 100%; /* Make the description take full width */
+        text-align: center; /* Center text alignment */
+    }
+
+    .expHeader {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+        margin-top: 10%;
+    }
+
+    .experiences {
+        font-size: 0.9rem; /* Adjust font size for experiences */
+    }
+
+    .heading {
+        text-align: center;
+        padding: 0;
+        margin-top:30%;
+        font-size: 3.3rem;
+        max-width:  100vw;
+        overflow: hidden;
+        padding-bottom: 0.5;
+    }
+    
+}

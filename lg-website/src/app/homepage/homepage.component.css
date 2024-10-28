@@ -1,0 +1,142 @@
+/* Home Section */
+.home {
+    height: 100vh;
+    padding-bottom: 250px;
+    background-color: #f7f9fb;
+    font-size: 4rem; /* Increased font size */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-weight: bold; /* Added font weight */
+    color: black; /* White text color */
+    position: relative; /* Required for absolute positioning of elements */
+    overflow: hidden; /* Hide overflow for the background animation */
+    padding-top:30px
+}
+
+.heading {
+    text-align: center;
+    padding-top: 2%;
+    margin: 0;
+    overflow: hidden;
+}
+.readMe{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-size:12pt;
+    width:20%;
+    color: black;
+    display: inline;
+    font-style: italic;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    text-align: center; /* Center the text content */
+}
+
+.pfp {
+    margin-right: 20px; /* Adjust the spacing between the image and text */
+    width:320px;
+    height:300px;
+    overflow:hidden;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Media query for small screens */
+
+
+.contact {
+    text-align: center;
+  }
+.contactSection {
+    padding-top: 10%;
+    height: fit-content;
+    font-size: 4rem; /* Increased font size */
+    text-align: center;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";; /* Similar to Apple's font */
+    font-weight: bold; /* Added font weight */
+    color: #000000; /* Black text color */
+    overflow: hidden;
+    z-index: 1;
+}
+  .contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    z-index: 1;
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #31708E;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .social-link {
+    animation: floatAnimation 3s ease infinite;
+  }
+
+
+  /* Media Queries for Mobile Responsiveness */
+
+
+
+
+@media (max-width: 768px) {
+
+    .intro-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .pfp {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .readMe {
+        width: 100%; /* Full width on smaller screens */
+    }
+    .heading {
+        text-align: center;
+        padding-top: 10%;
+        margin: 0;
+        font-size:3rem;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactSection {
+        font-size: 1.5rem; /* Final adjustment for very small screens */
+    }
+
+    .contact h2 {
+        font-size: 2rem; /* Final header size adjustment */
+    }
+
+    .social-link {
+        margin: 0 5px; /* Reduce margin between social links */
+        padding: 6px 16px; /* Adjust padding for very small screens */
+        font-size: 0.75rem; /* Further decrease font size */
+    }
+}
