@@ -1,14 +1,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<nav>
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/experiences" routerLinkActive="active">Experiences</a>
+    <a routerLink="/projects" routerLinkActive="active">Projects</a>
+    <a routerLink="/photography" routerLinkActive="active">Photography</a>
+</nav>
+
+<router-outlet></router-outlet>
+
+
 <app-nav-bar id="home"></app-nav-bar>
 
-<app-homepage></app-homepage>
 
-<app-experiences></app-experiences>
-
-<app-projects></app-projects>    
-    
-<app-photo-gallery id="photography"></app-photo-gallery>
-    
-<app-footer></app-footer>
 
