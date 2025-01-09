@@ -80,22 +80,26 @@
     margin: 0 10px;
     font-size: 1.2rem;
     color: #fff;
-    background-color: #31708E;
+    color:blue;
     border-radius: 25px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    animation: bounce 2s infinite;
   }
-  
-  .social-link:hover {
-    background-color: #0056b3;
+ 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Default position */
   }
-  
-
-  .social-link {
-    animation: floatAnimation 3s ease infinite;
+  50% {
+    transform: translateY(-5px); /* Slight upward movement */
   }
+}
 
-
+.icon{
+    max-width: 40px;
+    max-height: 40px;
+}
   /* Media Queries for Mobile Responsiveness */
 
 
